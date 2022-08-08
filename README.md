@@ -4,7 +4,7 @@
 ### How to setup
 1. Clone code
 ``````
-    git clone [https://github.com/azlogs/](https://github.com/azlogs/robot-simulator.git)
+    git clone https://github.com/azlogs/](https://github.com/azlogs/robot-simulator.git
 ``````
 2. Open the terminal on the main project folder and run the command:
 ```````
