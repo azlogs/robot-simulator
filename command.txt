@@ -1,0 +1,98 @@
+------Happy Case------
+
+PLACE 0,0,NORTH
+MOVE
+REPORT
+Expect: 0,1,NORTH
+
+PLACE 0,0,NORTH
+LEFT
+REPORT
+Expect: 0,0,WEST
+
+------Wrong command------
+
+PLACE 0,0, NORTH
+MOVE
+REPORT
+Expect: Wrong command
+
+PLACE 0, 0,NORTH
+LEFT
+REPORT
+Expect: Wrong command
+
+PLACE  0,0,NORTH
+LEFT
+REPORT
+Expect: Wrong command
+
+------Happy Case------
+
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+Expect: 3,3,NORTH
+
+------Single command------
+PLACE
+
+LEFT
+
+RIGHT
+
+REPORT
+
+------Long Case------
+PLACE 0,0,NORTH
+MOVE
+REPORT
+Expect: 0,1,NORTH
+MOVE
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+Expect: 0,4,WEST
+RIGHT
+MOVE
+MOVE
+MOVE
+REPORT
+Expect: 0,5,NORTH
+PLACE 3,3,WEST
+REPORT
+Expect: 3,3,WEST
+MOVE
+MOVE
+REPORT
+Expect: 1,3,WEST
+
+PLACE 3,2,EAST
+MOVE
+MOVE
+MOVE
+REPORT
+Expect: 5,2,EAST
+LEFT
+REPORT
+Expect: 5,2,NORTH
+LEFT
+RIGHT
+LEFT
+RIGHT
+REPORT
+Expect: 5,2,NORTH
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+REPORT
+Expect: 5,2,NORTH
+MOVE
+REPORT
+Expect: 5,3,NORTH
