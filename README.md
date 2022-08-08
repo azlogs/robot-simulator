@@ -36,8 +36,12 @@ LEFT
 REPORT
 Expect: 0,0,WEST
 ````
-I added Expect after report easier to compare results between actual and expectations, the program will ignore the line if that is not a command.
-The Invalid command  "PLACE x,y,F", "LEFT", "RIGHT", "MOVE", "REPORT"
+I added an expectation after the "REPORT" command for easier to compare results between actual and expectations, the program will ignore the line if that is not a command.
+
+The Invalid command  
+```
+"PLACE x,y,F", "LEFT", "RIGHT", "MOVE", "REPORT"
 x,y= number
 F = "NORTH" | "SOUTH" | "WEST" | "EAST"
+```
 The invalid commands will be printed out on the screen
