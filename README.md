@@ -20,21 +20,25 @@ of the robot.
 - Provide test data to demonstrate the application in operation. (file input commands.txt)
 ## CONSTRAINTS
 - The toy robot must not fall off the table during movement. This also includes the initial placement of the toy robot. Any move that would cause the robot to fall must be ignored.
-# EXAMPLE 1
-Input:
+## EXAMPLE
+### EXAMPLE 1
+```
+/// Input:
     PLACE 0,0,NORTH
     MOVE
     REPORT
 Example Output:
     0,1,NORTH
-EXAMPLE 2
-Input:
+```
+### EXAMPLE 2
+```
+// Input:
     PLACE 0,0,NORTH
     LEFT
     REPORT
-Output:
+// Output:
     0,0,WEST
-    
+```
 # How to use project
 ### 1. Environment
 - This project has built on .net 6, so make sure your pc has to install .net 6 befre run it. Refer here https://dotnet.microsoft.com/en-us/download/dotnet/6.0
